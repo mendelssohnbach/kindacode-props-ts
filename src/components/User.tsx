@@ -1,5 +1,6 @@
 import Wrapper from './Wrapper';
 import { UserProps } from '../types';
+import { SomethingButton } from './SomethingButton';
 
 const User = ({ id, email, age, isMarried, role, skills, doSomething }: UserProps) => {
   return (
@@ -21,13 +22,8 @@ const User = ({ id, email, age, isMarried, role, skills, doSomething }: UserProp
           ))}
         </ul>
       )}
-      <button
-        type="button"
-        onClick={doSomething}
-        style={{ padding: '15px 40px' }}
-      >
-        Do something
-      </button>
+
+      <SomethingButton doSomething={doSomething} />
     </Wrapper>
   );
 };
