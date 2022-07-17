@@ -12,7 +12,12 @@ const User = ({ id, email, age, isMarried, role, skills, doSomething }: UserProp
       {skills && (
         <ul>
           {skills.map((skill) => (
-            <li key={skill}>{skill}</li>
+            <li
+              key={skill}
+              style={{ listStyle: 'none', padding: '8px 0' }}
+            >
+              {skill}
+            </li>
           ))}
         </ul>
       )}
