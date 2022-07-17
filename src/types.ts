@@ -13,3 +13,7 @@ export interface UserProps {
   skills?: string[];
   doSomething: React.MouseEventHandler;
 }
+
+export interface WrapperProps {
+  children: React.ReactNode;
+}

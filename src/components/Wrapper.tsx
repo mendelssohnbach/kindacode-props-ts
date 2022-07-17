@@ -1,6 +1,4 @@
-interface WrapperProps {
-  children: React.ReactNode;
-}
+import { WrapperProps } from '../types';
 
 const Wrapper = ({ children }: WrapperProps) => {
   return (
