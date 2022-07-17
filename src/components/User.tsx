@@ -1,16 +1,6 @@
 import React from 'react';
 import Wrapper from './Wrapper';
-import { Role } from '../types';
-
-interface UserProps {
-  id: string;
-  email: string;
-  age?: number;
-  isMarried?: boolean;
-  role: Role;
-  skills?: string[];
-  doSomething: React.MouseEventHandler;
-}
+import { UserProps } from '../types';
 
 const User = ({ id, email, age, isMarried, role, skills, doSomething }: UserProps) => {
   return (
