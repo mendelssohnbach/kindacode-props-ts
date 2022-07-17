@@ -1,4 +1,4 @@
-import { Role } from '../components/User';
+import { Role } from '../types';
 
 const user = {
   id: 'u1',

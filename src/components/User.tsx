@@ -1,11 +1,6 @@
 import React from 'react';
 import Wrapper from './Wrapper';
-
-export enum Role {
-  member = 'member',
-  staff = 'staff',
-  admin = 'admin',
-}
+import { Role } from '../types';
 
 interface UserProps {
   id: string;
